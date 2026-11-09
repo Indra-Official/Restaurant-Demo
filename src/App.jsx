@@ -78,22 +78,13 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#0e0d0b] text-[#a7a7a7] flex flex-col font-dmsans pb-16 md:pb-0">
       
-      {/* 1. Announcement Bar & Revenue Savings Banner */}
+      {/* 1. Whisper-thin Minimal Top Bar */}
       <AnnouncementBar
-        serviceMode={serviceMode}
-        setServiceMode={(mode) => {
-          setServiceMode(mode);
-          if (mode === 'reservation') {
-            handleScrollToSection('reservations');
-          } else {
-            handleScrollToSection('menu');
-          }
-        }}
         selectedBranch={selectedBranch}
         onOpenBranchSelector={() => setBranchSelectorOpen(true)}
       />
 
-      {/* 2. Header & Navigation with Official Logo */}
+      {/* 2. Uncluttered Luxury Navigation */}
       <Navbar
         selectedBranch={selectedBranch}
         onSelectBranch={setSelectedBranch}
@@ -105,10 +96,10 @@ export default function App() {
         setBranchSelectorOpen={setBranchSelectorOpen}
       />
 
-      {/* Main Content Sections */}
+      {/* Main Content Sections with Generous Spacing */}
       <main className="flex-1">
         
-        {/* 3. Hero Section (Minimalist Luxury with Authentic Slider & Separator) */}
+        {/* 3. Hero Section (Cinematic, Serene, Zero Clutter) */}
         <Hero
           onOrderClick={() => handleScrollToSection('menu')}
           onReserveClick={() => handleScrollToSection('reservations')}
@@ -121,12 +112,13 @@ export default function App() {
         {/* Commission Savings Calculator */}
         <SavingsCalculator onOrderClick={() => handleScrollToSection('menu')} />
 
-        {/* 6. Direct Online Seafood Menu & Checkout */}
+        {/* 6. Direct Online Seafood Menu (with Order Mode Selector) */}
         <MenuSection
           cartItems={cartItems}
           onAddToCart={handleAddToCart}
           onUpdateQuantity={handleUpdateQuantity}
-          onOpenCart={() => setCartDrawerOpen(true)}
+          serviceMode={serviceMode}
+          setServiceMode={setServiceMode}
         />
 
         {/* 5. Interactive Multi-Branch Locator (12 Locations) */}
@@ -139,7 +131,7 @@ export default function App() {
           }}
         />
 
-        {/* 7. Automated Table Reservation System (Step-by-Step + WhatsApp Preview) */}
+        {/* 7. Automated Table Reservation System */}
         <ReservationSection
           selectedBranch={selectedBranch}
           onSelectBranch={setSelectedBranch}
@@ -189,7 +181,7 @@ export default function App() {
 
       {/* Minimal Toast Notification */}
       {toastMessage && (
-        <div className="fixed bottom-20 md:bottom-8 right-6 z-50 bg-[#171819] border border-[#E4C590] text-white px-4 py-2.5 shadow-2xl flex items-center gap-2.5 text-xs font-dmsans animate-in fade-in duration-150">
+        <div className="fixed bottom-20 md:bottom-8 right-6 z-50 bg-[#141311] border border-[#E4C590] text-white px-4 py-2.5 shadow-2xl flex items-center gap-2 text-xs font-dmsans animate-in fade-in duration-150">
           <Check className="w-4 h-4 text-[#E4C590]" />
           <span>{toastMessage}</span>
         </div>
