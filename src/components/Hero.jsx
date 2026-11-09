@@ -5,7 +5,7 @@ export default function Hero({ onOrderClick, onReserveClick, selectedBranch }) {
   return (
     <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-[#0e0d0b] border-b border-white/5">
       
-      {/* Authentic Background Slider Layer */}
+      {/* Background Image Layer */}
       <div 
         className="absolute inset-0 bg-cover bg-center transition-all duration-1000 scale-105"
         style={{ backgroundImage: `url('/slider-1.webp')` }}
@@ -16,32 +16,32 @@ export default function Hero({ onOrderClick, onReserveClick, selectedBranch }) {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-24 sm:py-32 text-center">
         
         {/* Subtle Pre-heading */}
-        <div className="text-[11px] font-dmsans uppercase tracking-[0.3em] text-[#E4C590] mb-4">
-          Luxury Seafood &amp; Arabian Dining • Tamil Nadu
+        <div className="text-[11px] font-dmsans uppercase tracking-[0.3em] text-[#E4C590] mb-3">
+          Luxury Seafood &amp; Arabian Dining
         </div>
 
-        {/* Authentic Separator SVG */}
+        {/* Authentic Separator Motif */}
         <div className="flex justify-center mb-6">
-          <img src="/separator.svg" alt="" className="h-2.5 w-auto opacity-75" />
+          <img src="/separator.svg" alt="" className="h-2.5 w-auto opacity-80" />
         </div>
 
-        {/* Grand Forum Serif Headline */}
+        {/* Clean, Elegant Headline */}
         <h1 className="text-3xl sm:text-5xl md:text-6xl text-white font-forum leading-[1.15] max-w-3xl mx-auto tracking-wide my-4">
-          Fresh Ocean Catches &amp; Signature Arabian Seafood Delivered Commission-Free
+          Fresh Ocean Catches &amp; Signature Arabian Seafood
         </h1>
 
-        {/* Subtitle */}
+        {/* Dignified Subtitle */}
         <p className="text-sm sm:text-base text-[#a7a7a7] font-dmsans max-w-xl mx-auto leading-relaxed mt-5 mb-10">
-          Serving 12+ locations across Chennai &amp; Tamil Nadu. Experience direct web ordering, instant table bookings, and zero middleman fees.
+          Serving 12+ prime coastal and city dining hubs across Tamil Nadu. Experience morning harbor catches, authentic coal-fired Arabian grills, and warm hospitality.
         </p>
 
-        {/* Dual Minimalist CTAs */}
+        {/* Clean Action Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <button
             onClick={onOrderClick}
             className="btn-luxury-solid w-full sm:w-auto px-8 py-3.5 text-xs tracking-[0.2em]"
           >
-            <span>Order Direct Online</span>
+            <span>Explore Menu</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </button>
 
@@ -50,7 +50,7 @@ export default function Hero({ onOrderClick, onReserveClick, selectedBranch }) {
             className="btn-luxury-outline w-full sm:w-auto px-8 py-3.5 text-xs tracking-[0.2em]"
           >
             <Calendar className="w-3.5 h-3.5" />
-            <span>Reserve a Table</span>
+            <span>Book a Table</span>
           </button>
         </div>
 

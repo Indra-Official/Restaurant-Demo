@@ -106,14 +106,10 @@ export default function MenuSection({
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   
-                  {/* Subtle Direct Savings pill */}
-                  <div className="absolute top-3 left-3 bg-[#0e0d0b]/90 border border-white/10 px-2.5 py-1 text-[10px] text-[#E4C590] uppercase tracking-wider">
-                    Save ₹{savings} Direct
-                  </div>
-
+                  {/* Clean portion pill */}
                   {dish.isHalal && (
                     <div className="absolute top-3 right-3 bg-[#0e0d0b]/90 border border-white/10 px-2 py-0.5 text-[9px] text-[#a7a7a7] uppercase tracking-wider">
-                      Halal
+                      100% Halal
                     </div>
                   )}
                 </div>
@@ -143,17 +139,9 @@ export default function MenuSection({
                   {/* Pricing & Add */}
                   <div className="mt-6 pt-4 border-t border-white/5 flex items-center justify-between">
                     <div>
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-2xl font-forum text-[#E4C590]">
-                          ₹{dish.price}
-                        </span>
-                        <span className="text-xs text-[#a7a7a7]/60 line-through">
-                          ₹{dish.aggregatorPrice}
-                        </span>
+                      <div className="text-2xl font-forum text-[#E4C590]">
+                        ₹{dish.price}
                       </div>
-                      <span className="text-[9px] uppercase tracking-widest text-[#a7a7a7] block">
-                        Fair Direct Price
-                      </span>
                     </div>
 
                     {quantity === 0 ? (

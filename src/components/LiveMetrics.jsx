@@ -54,19 +54,19 @@ export default function LiveMetrics() {
   const locationsCount = useCounter(12, 1400, isVisible);
   const dinersCount = useCounter(1000, 2000, isVisible);
   const dishesCount = useCounter(50, 1600, isVisible);
-  const commissionCount = useCounter(100, 1400, isVisible);
+  const halalCount = useCounter(100, 1400, isVisible);
 
   return (
     <section 
       ref={sectionRef} 
-      className="py-14 bg-[#0e0d0b] border-b border-white/10"
+      className="py-16 bg-[#0e0d0b] border-b border-white/5"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Subtle Section Subtitle & Ornament */}
-        <div className="text-center mb-8 font-dmsans">
+        {/* Subtle Subtitle & Ornament */}
+        <div className="text-center mb-10 font-dmsans">
           <div className="text-[11px] uppercase tracking-[0.25em] text-[#E4C590]">
-            Our Proven Scale &amp; Excellence
+            Our Proven Scale &amp; Culinary Heritage
           </div>
           <div className="flex justify-center my-2">
             <img src="/separator.svg" alt="" className="h-2 w-auto opacity-70" />
@@ -82,7 +82,7 @@ export default function LiveMetrics() {
               {locationsCount}<span className="text-2xl ml-0.5">+</span>
             </div>
             <div className="text-xs uppercase tracking-widest text-white font-dmsans mt-2 font-medium">
-              Prime Locations
+              Dining Hubs
             </div>
             <p className="text-[11px] text-[#a7a7a7] font-dmsans mt-1">Across Tamil Nadu</p>
           </div>
@@ -93,9 +93,9 @@ export default function LiveMetrics() {
               {dinersCount.toLocaleString()}<span className="text-2xl ml-0.5">+</span>
             </div>
             <div className="text-xs uppercase tracking-widest text-white font-dmsans mt-2 font-medium">
-              Daily Satisfied Diners
+              Daily Diners
             </div>
-            <p className="text-[11px] text-[#a7a7a7] font-dmsans mt-1">Dine-in &amp; Direct Delivery</p>
+            <p className="text-[11px] text-[#a7a7a7] font-dmsans mt-1">Dine-in &amp; Takeaway</p>
           </div>
 
           {/* Stat 3: 50+ Specialities */}
@@ -109,15 +109,15 @@ export default function LiveMetrics() {
             <p className="text-[11px] text-[#a7a7a7] font-dmsans mt-1">Dawn Catch to Table</p>
           </div>
 
-          {/* Stat 4: 100% Commission-Free */}
+          {/* Stat 4: 100% Halal Kitchen */}
           <div className="p-4">
             <div className="text-4xl sm:text-5xl font-forum text-[#E4C590] leading-none">
-              {commissionCount}<span className="text-2xl ml-0.5">%</span>
+              {halalCount}<span className="text-2xl ml-0.5">%</span>
             </div>
             <div className="text-xs uppercase tracking-widest text-white font-dmsans mt-2 font-medium">
-              Commission-Free
+              Halal Certified
             </div>
-            <p className="text-[11px] text-[#a7a7a7] font-dmsans mt-1">Direct Web Ordering</p>
+            <p className="text-[11px] text-[#a7a7a7] font-dmsans mt-1">Strict Quality Kitchens</p>
           </div>
 
         </div>

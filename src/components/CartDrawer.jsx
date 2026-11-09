@@ -127,15 +127,6 @@ export default function CartDrawer({
             </button>
           </div>
 
-          {/* Savings Callout */}
-          {cartItems.length > 0 && (
-            <div className="p-3 bg-[#171819] border-b border-white/10 text-xs text-center">
-              <span className="text-[#E4C590] font-bold">
-                🎉 You saved ₹{totalSavings} on delivery commissions today!
-              </span>
-            </div>
-          )}
-
           {/* Items */}
           <div className="flex-1 overflow-y-auto p-5 space-y-4">
             {cartItems.length === 0 ? (

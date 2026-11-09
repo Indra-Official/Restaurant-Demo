@@ -32,13 +32,6 @@ export default function OrderSuccessModal({ orderData, onClose }) {
           </button>
         </div>
 
-        {/* Savings banner */}
-        <div className="my-4 p-3 bg-[#171819] border border-white/10 text-xs text-center">
-          <span className="text-[#E4C590] font-bold">
-            🎉 You saved ₹{orderData.savings} on delivery commissions today!
-          </span>
-        </div>
-
         {/* Summary */}
         <div className="p-4 bg-[#171819] border border-white/10 space-y-2 text-xs">
           <div className="text-[10px] uppercase tracking-wider text-[#a7a7a7]">

@@ -6,7 +6,7 @@ export default function AnnouncementBar({ selectedBranch, onOpenBranchSelector }
     <aside aria-label="Restaurant Info" className="w-full bg-[#0a0908] border-b border-white/5 text-[11px] text-[#8e8d8a] font-dmsans tracking-wider">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between">
         
-        {/* Left: Location & Hours matching original arabiangardengroupofrestaurants.com */}
+        {/* Left: Location & Hours */}
         <div className="flex items-center gap-4">
           <button 
             onClick={onOpenBranchSelector}
@@ -25,11 +25,8 @@ export default function AnnouncementBar({ selectedBranch, onOpenBranchSelector }
           </div>
         </div>
 
-        {/* Right: Direct Web Ordering Message & Hotline */}
-        <div className="flex items-center gap-4 text-xs">
-          <span className="hidden md:inline text-[#E4C590] font-normal tracking-wide text-[11px]">
-            Save up to 25% vs Food Apps
-          </span>
+        {/* Right: Direct Hotline */}
+        <div className="flex items-center gap-3 text-xs">
           <a
             href="tel:+918680000674"
             className="flex items-center gap-1.5 text-white/90 hover:text-[#E4C590] transition-colors font-medium text-[11px]"

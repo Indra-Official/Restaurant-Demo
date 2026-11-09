@@ -67,7 +67,7 @@ export default function Navbar({
             />
           </a>
 
-          {/* Desktop Nav Links - Clean & Uncluttered */}
+          {/* Desktop Nav Links - Classic & Refined */}
           <nav className="hidden lg:flex items-center gap-8 text-xs font-dmsans uppercase tracking-[0.2em] font-medium text-[#a7a7a7]">
             <a href="#menu" className="hover:text-[#E4C590] transition-colors">
               Menu
@@ -78,18 +78,18 @@ export default function Navbar({
             <a href="#story" className="hover:text-[#E4C590] transition-colors">
               About Us
             </a>
-            <a href="#savings" className="hover:text-[#E4C590] transition-colors">
-              Zero Fees
+            <a href="#reservations" className="hover:text-[#E4C590] transition-colors">
+              Reservations
             </a>
             <a href="#contact" className="hover:text-[#E4C590] transition-colors">
               Contact
             </a>
           </nav>
 
-          {/* Action Area: Branch Pill, Cart, Table Booking */}
+          {/* Action Area */}
           <div className="flex items-center gap-3 sm:gap-4">
             
-            {/* Subtle Minimalist Branch Selector Dropdown */}
+            {/* Minimalist Branch Selector Dropdown */}
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setBranchSelectorOpen(!branchSelectorOpen)}
@@ -187,7 +187,7 @@ export default function Navbar({
               onClick={() => setMobileMenuOpen(false)}
               className="py-1.5 hover:text-white border-b border-white/5"
             >
-              Seafood Menu
+              Menu
             </a>
             <a 
               href="#branches" 
@@ -204,11 +204,11 @@ export default function Navbar({
               About Us
             </a>
             <a 
-              href="#savings" 
+              href="#reservations" 
               onClick={() => setMobileMenuOpen(false)}
-              className="py-1.5 text-[#E4C590] border-b border-white/5"
+              className="py-1.5 hover:text-white border-b border-white/5"
             >
-              Zero Middleman Fees
+              Reservations
             </a>
             <a 
               href="#contact" 
