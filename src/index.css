@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --main-color: #E4C590;
+    --main-color-rgb: 228, 197, 144;
+    --color-two: #0e0d0b;
+    --color-four: #171819;
+    --color-five: #0e0d0c;
+    --color-six: #1a1b1c;
+    --color-seven: #151616;
+    --color-eight: #121111;
+    --color-muted: #a7a7a7;
+    --font-heading: 'Forum', serif;
+    --font-body: 'DM Sans', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-body);
+    color: #a7a7a7;
+    background-color: #0e0d0b;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: #0e0d0b;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: var(--font-heading);
+    letter-spacing: 0.03em;
+    font-weight: 400;
+  }
+}
+
+.font-forum {
+  font-family: 'Forum', serif;
+}
+
+.font-dmsans {
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Elegant minimalist scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0e0d0b;
+}
+::-webkit-scrollbar-thumb {
+  background: #252422;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E4C590;
+}
+
+/* Minimalist luxury button style matching arabiangardengroupofrestaurants.com */
+.btn-luxury-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #E4C590;
+  background-color: transparent;
+  border: 1px solid #E4C590;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-luxury-outline:hover {
+  background-color: #E4C590;
+  color: #0e0d0b;
+}
+
+.btn-luxury-solid {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #0e0d0b;
+  background-color: #E4C590;
+  border: 1px solid #E4C590;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-luxury-solid:hover {
+  background-color: #d1b17b;
+  border-color: #d1b17b;
+}
